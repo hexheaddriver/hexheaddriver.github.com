@@ -9,8 +9,9 @@
 
     <!-- Le styles -->
     <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <link type="text/css" href="./jquery.jplayer.2.3.0/skin/premium-pixels/premium-pixels.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -25,124 +26,95 @@
                     <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="./ico/favicon.png">
     -->
-
-    <style type="text/css">
-      body { 
-        background: #000 url(./img/background_1366.png) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-      div {
-        background-color: rgba(0,0,0,0);
-      }
-      .container-wrap {
-        background-color: rgba(0,0,0,0.8);
-        display: none;
-      }
-      .container {
-        padding-top:30px;
-      }
-      p{
-        color: #BBB;
-      }
-    </style>
-
-
   </head>
 
   <body>
     <div class="container-wrap">
       <div class="container">
-        <div class="row-fluid">
-          <div class="span4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="span4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="span4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="hero-unit pagination-centered">
+          <h1>Ola k ase</h1>
+        </div>
+
+        <!--
+        <audio class="player playlist" controls>
+          <source src="./media/3.mp3" type="audio/mpeg" />
+          <source src="./media/3.ogg" type="audio/ogg" />
+          Your browser does not support this audio format.
+        </audio>
+        -->
+
+        <!-- .jp-audio -->
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+        <div id="jp_container_1" class="jp-audio">
+          <div class="jp-type-playlist">
+            <div class="jp-gui jp-interface">
+              <ul class="jp-controls">
+                <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+                <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+                <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+              </ul>
+<div class="jp-current-time"></div>
+              <div class="jp-progress">
+                
+                <div class="jp-seek-bar">
+                  <div class="jp-play-bar"></div>
+                </div>
+
+              </div>
+              <div class="jp-duration"></div>
+              
+              <div class="jp-volume-bar">
+                <div class="jp-volume-bar-value"></div>
+              </div>
+              <div class="jp-time-holder">
+                <div class="jp-current-time"></div>
+                <div class="jp-duration"></div>
+              </div>
+              <ul class="jp-toggles">
+                <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+                <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+                <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+                <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+              </ul>
+            </div>
+            <div class="jp-playlist">
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+            <div class="jp-no-solution">
+              <span>Update Required</span>
+              To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+            </div>
           </div>
         </div>
-        <div class="row-fluid">
-          <div class="span4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="span4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="span4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
+        <!-- .jp-audio -->
+
+        <ul class="row-fluid pagination-centered">
+          <li class="span3">
+            <div class="span6 instruments guitar"></div>
+            <div class="span6 instruments mic"></div>
+            <h3 class="span12">Nacho López</h3>
+          </li>
+          <li class="span3">
+            <div class="span6 instruments guitar"></div>
+            <div class="span6 instruments mic"></div>
+            <h3 class="span12">Rubén Blanes</h3>
+          </li>
+          <li class="span3">
+            <div class="offset3 span6 instruments drums"></div>
+            <h3 class="span12">Ernesto Suay</h3>
+          </li>
+          <li class="span3">
+            <div class="offset3 span6 instruments bass"></div>
+            <h3 class="span12">Francis Rubio</h3>
+          </li>
+        </ul>
         <div class="row-fluid">
           <div class="offset4 span4">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -180,6 +152,9 @@
     <script src="./js/bootstrap-carousel.js"></script>
     <script src="./js/bootstrap-typeahead.js"></script>
     -->
+    <script type="text/javascript" src="./jquery.jplayer.2.3.0/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="./jquery.jplayer.2.3.0/jplayer.playlist.min.js"></script>
+
     <script type="text/javascript">
       $(document).ready(function(){
         
@@ -201,18 +176,128 @@
         SetTheMarginTop(); //para ejecutarlo al menos una vez, al cargar la página
         // ******** END SetTheMarginTop() ********
 
-        /* //no funciona
-        function parallaxScroll(){
-          var scrolledY = $(window).scrollTop();
-          $('.container').css('top','-'+((scrolledY*0.6))+'px');
-        }
-        $(window).bind('scroll',function(){
-          parallaxScroll();
+
+        new jPlayerPlaylist({
+          jPlayer: "#jquery_jplayer_1",
+          cssSelectorAncestor: "#jp_container_1"
+        }, [
+          {
+            title:"TÍtulo cancion 1",
+            mp3:"./media/3.mp3",
+            oga:"./media/3.ogg"
+          },
+          {
+            title:"Título cancion 2",
+            mp3:"./media/4.mp3",
+            oga:"./media/4.ogg"
+          },
+          {
+            title:"Título cancion 3",
+            free: true,
+            mp3:"./media/bowie.mp3",
+            oga:"./media/bowie.ogg"
+          }
+        ], {
+          swfPath: "js",
+          supplied: "oga, mp3",
+          wmode: "window"
         });
-        */
 
       });
     </script>
+
+    <script type="text/javascript">
+            jQuery(function($) {
+                var supportsAudio = !!document.createElement('audio').canPlayType;
+                    if(supportsAudio) {
+                        var index = 0,
+                        playing = false;
+                        mediaPath = '/media/',
+                        extension = '',
+                        tracks = [
+                            {"track":1,"name":"Cancion 1","length":"00:55","file":"3"},
+                            {"track":2,"name":"Cancion 2","length":"00:37","file":"4"},
+                            {"track":3,"name":"Cancion 3","length":"01:05","file":"bowie"}
+                        ],
+                        trackCount = tracks.length,
+                        npAction = $('#npAction'),
+                        npTitle = $('#npTitle'),
+
+                        audio = $('#audio1').bind('play', function() {
+                            playing = true;
+                            npAction.text('Now Playing:');
+                        }).bind('pause', function() {
+                            playing = false;
+                            npAction.text('Paused:');
+                        }).bind('ended', function() {
+                            npAction.text('Paused:');
+                            if((index + 1) < trackCount) {
+                                index++;
+                                loadTrack(index);
+                                audio.play();
+                            } else {
+                                audio.pause();
+                                index = 0;
+                                loadTrack(index);
+                            }
+                        }).get(0),
+                        btnPrev = $('#btnPrev').click(function() {
+                            if((index - 1) > -1) {
+                                index--;
+                                loadTrack(index);
+                                if(playing) {
+                                    audio.play();
+                                }
+                            } else {
+                                audio.pause();
+                                index = 0;
+                                loadTrack(index);
+                            }
+                        }),
+                        btnNext = $('#btnNext').click(function() {
+                            if((index + 1) < trackCount) {
+                                index++;
+                                loadTrack(index);
+                                if(playing) {
+                                    audio.play();
+                                }
+                            } else {
+                                audio.pause();
+                                index = 0;
+                                loadTrack(index);
+                            }
+                        }),
+                    li = $('#plUL li').click(function() {
+                        var id = parseInt($(this).index());
+                        if(id !== index) {
+                            playTrack(id);
+                        }
+                    }),
+                    loadTrack = function(id) {
+                        $('.plSel').removeClass('plSel');
+                        $('#plUL li:eq(' + id + ')').addClass('plSel');
+                        npTitle.text(tracks[id].name);
+                        index = id;
+                        audio.src = mediaPath + tracks[id].file + extension;
+                    },
+                    playTrack = function(id) {
+                        loadTrack(id);
+                        audio.play();
+                    };
+                    if(audio.canPlayType('audio/ogg')) {
+                        extension = '.ogg';
+                    }
+                    if(audio.canPlayType('audio/mpeg')) {
+                        extension = '.mp3';
+                    }
+                    loadTrack(index);
+                }
+                });
+            });
+        </script>
+
+
+
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
